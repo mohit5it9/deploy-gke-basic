@@ -18,13 +18,12 @@ jobs:
   #
   # - name: deploy-gke-basic-deploy
   #   type: deploy
+  #   method: replace
   #   flags:
   #     - deploy-gke-basic
   #   steps:
   #     - IN: deploy-gke-basic-manifest
   #     - IN: deploy-gke-basic-gke-cluster
-  #     - TASK: managed
-  #       deployMethod: replace
 
   - name: myCustomDeployment
     type: runCLI
