@@ -44,5 +44,5 @@ integrations:
   # adding docker hub integration so that credentials are available to CI Job
   # http://docs.shippable.com/integrations/imageRegistries/ecr/
   hub:
-    - integrationName: dr-gcr
-      type: gcr
+    - integrationName: dr-gcloud
+      type: gcloudKey
