@@ -16,7 +16,7 @@ env:
     - TESTS_LOC_DIR=$SHIPPABLE_REPO_DIR/tests
     - MOD_LOC=$SHIPPABLE_REPO_DIR/node_modules/.bin/
     # replace with your info - gcr.io/GOOGLE_PROJECT/GCR_REPO
-    - GCR_REPO=gcr.io/shippable-gke/deploy-gke-basic
+    - GCR_REPO=asia.gcr.io/lithe-camp-182705/drydockpython
 
 build:
 
@@ -44,5 +44,5 @@ integrations:
   # adding docker hub integration so that credentials are available to CI Job
   # http://docs.shippable.com/integrations/imageRegistries/ecr/
   hub:
-    - integrationName: dr-gcloud
+    - integrationName: gcloud
       type: gcloudKey
